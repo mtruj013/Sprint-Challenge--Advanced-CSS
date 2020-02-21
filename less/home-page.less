@@ -71,11 +71,12 @@
     justify-content: center;
 
     @media @mobile {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-    .center();
-  }
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 15px;
+      .center();
+      
+    }
   
     .walk-text {
       width: 50%;
@@ -93,6 +94,17 @@
       font-size: 1.8rem;
       border-radius: 10px;
       border: none;
+
+        &:hover{
+          background-color: white;
+          color: @btn-bg-color;
+
+
+        }
+
+       @media @mobile{
+         width: 100%;
+       }
     }
 
     .walk-img {
@@ -103,19 +115,25 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      
+        @media @mobile {
+          width: 100%;
+          
+        }
       }
 
-      @media @mobile {
-        width: 100%;
-      }//this closes mediq q for img
-    }
+     
+
+
+      
+    }//this closes .walk-imng
 
     @media @mobile{
       width: 100%;
     }
-  }
+   }//this closes .walk.text
 
   
-  }
+  }//this closes .walk
   
 }// home
