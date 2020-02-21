@@ -2,6 +2,20 @@
 
 .home {
 
+  .header-img img{
+    border-radius: 20px;
+
+      @media @mobile{
+        width: 100%;
+      }
+
+ 
+    }
+
+ 
+    
+  
+
   .intro {
 
     h2 {
@@ -25,6 +39,16 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    @media @mobile{
+      .sky, .launch{
+        display: none;
+      }
+
+      .blast{
+        width: 100%;
+      }
+    }
   }
 
   .visit-planets {
@@ -46,6 +70,13 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    .center();
+  }
+  
     .walk-text {
       width: 50%;
 
@@ -73,13 +104,18 @@
         height: auto;
         border-radius: 10px;
       }
+
+      @media @mobile {
+        width: 100%;
+      }//this closes mediq q for img
+    }
+
+    @media @mobile{
+      width: 100%;
     }
   }
 
-  .header-img img{
-    border-radius: 20px;
-    }
+  
   }
-
-
+  
 }// home
