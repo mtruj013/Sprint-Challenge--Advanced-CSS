@@ -1,1 +1,37 @@
 // Navigation code here
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px 0;
+    background-color: @nav-bg;
+    z-index: 1;  
+    top: 0; 
+    width: 100%;  
+    .center();
+    
+
+    h1{
+        font-size: 5rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: @nav-font;
+        font-size: 1.9rem;
+        margin: 20px;
+        
+        @media @mobile{
+            width: 100%;
+            justify-content: space-around;
+            margin: 15px;
+        }
+       
+    }
+
+    @media @mobile{
+        width: 100%;
+        
+    }
+}
